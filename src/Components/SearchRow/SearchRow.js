@@ -1,6 +1,7 @@
 import React from "react"
 import SearchForm from "./SearchForm/searchForm"
 import WeatherToday from "./WeatherToday/WeatherToday"
+import './SearchRow.css'
 
 const SearchRow = (props) => {
   let name 

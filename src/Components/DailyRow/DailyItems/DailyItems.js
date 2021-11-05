@@ -1,8 +1,9 @@
 import React from 'react'
 import Item from './Item/Item'
+import './DailyItems.css'
 
 const DailyItems = props => (
-  <ul>
+  <ul className="DailyItems">
     {props.data.map( item => {
     return (
       <Item 

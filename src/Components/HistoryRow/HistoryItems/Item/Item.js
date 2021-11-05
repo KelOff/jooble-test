@@ -1,4 +1,5 @@
 import React from 'react'
+import './HistoryItem.css'
 
 const Item = props => {
   return (

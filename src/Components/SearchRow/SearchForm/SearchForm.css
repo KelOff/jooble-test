@@ -1,0 +1,14 @@
+.SearchForm input {
+  background-color: rgb(223, 217, 217);
+  height: 3vh;
+  margin-right: 30px;
+}
+
+.SearchForm button {
+  background-color: rgb(71, 74, 238);
+  border-radius: 5px;
+  height: 4vh;
+  width: 100px;
+  color: #fff;
+  font-size: 1.3rem;
+}

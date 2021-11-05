@@ -1,13 +1,17 @@
 import React from 'react'
 import DailyItems from './DailyItems/DailyItems';
+import './DailyRow.css'
 
 const DailyRow = props => {
   const array = props.data
   array.shift()
   return (
-    <DailyItems
-      data={array}
-    />
+    <div className="DailyRow">
+      <DailyItems
+        data={array}
+      />
+
+    </div>
 
 
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import './DailyItem.css'
 
 const Item = props => {
   console.log(props)
@@ -18,7 +19,7 @@ const Item = props => {
   // console.log(dayName)
 
   return (
-    <div>
+    <div className="DailyItem">
       <h2>{temp}</h2>
     </div>
   )

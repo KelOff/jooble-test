@@ -1,0 +1,13 @@
+.DailyItem {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  border: 1px solid rgb(42, 40, 148);
+  background-color: rgb(190, 190, 229);
+  border-radius: 8px;
+}
+
+.DailyItem h2 {
+  margin: 0 auto;
+  padding-top: 50%;
+}

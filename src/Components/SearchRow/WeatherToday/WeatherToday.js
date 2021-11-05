@@ -8,7 +8,7 @@ const WeatherToday = props => {
 
   return (
     <div>
-      <h1>
+      <h1 style={{ "fontSize": "2.7rem" }}>
         {props.name} (Today): {temperature}
       </h1>
     </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 import Item from './Item/Item'
+import './HistoryItems.css'
 
 const HistoryItems = props => (
-  <ul>
+  <> 
+  <h1 style={{"display" : "block"}}>last 10 queries</h1>
+  <ul className="HistoryItems">
     {props.data.map(item => {
       return (
         <Item 
@@ -12,6 +15,7 @@ const HistoryItems = props => (
       )})
     }  
   </ul>
+  </>
   )
 
 
