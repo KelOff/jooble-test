@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import './App.css';
 import SearchRow from './Components/SearchRow/SearchRow';
-import {fetchWeatherStart} from "./store/actions/weatherToday"
-import {fetchHandleChange} from './store/actions/handlerWeather'
+import { fetchWeatherStart } from './store/actions/weatherToday'
+import { fetchHandleChange } from './store/actions/handlerWeather'
 import HistoryRow from './Components/HistoryRow/HistoryRow';
 import DailyRow from './Components/DailyRow/DailyRow';
 
@@ -12,8 +12,6 @@ class App extends Component {
   componentDidMount() {
     this.props.fetchWeatherStart()
   }
-
-  
   handleChange = event => {
     event.preventDefault()
     const name = event.target.input.value
@@ -26,16 +24,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <SearchRow 
-          state={this.props}
-          func={this.handleChange}
+        <SearchRow 
+          state={ this.props }
+          func={ this.handleChange }
           />
-          <HistoryRow 
-            data={this.props.history}
-            onClick={this.choseOfHistory}
+        <HistoryRow 
+            data={ this.props.history }
+            onClick={ this.choseOfHistory }
           />
-          <DailyRow 
-            data={this.props.daily}
+        <DailyRow 
+            data={ this.props.daily }
           />
       </div>
     );

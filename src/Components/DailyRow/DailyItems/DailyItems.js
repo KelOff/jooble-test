@@ -7,8 +7,8 @@ const DailyItems = props => (
     {props.data.map( item => {
     return (
       <Item 
-        day={item.dt}
-        temp={item.temp.day}
+        day={ item.dt }
+        temp={ item.temp.day }
       />
     )})
     }

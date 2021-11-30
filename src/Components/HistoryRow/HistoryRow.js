@@ -10,10 +10,9 @@ const HistoryRow = props => {
   return (
     <div className="HistoryRow">
       <HistoryItems 
-        data={array}
-        onClick={props.onClick}
+        data={ array }
+        onClick={ props.onClick }
       />
-
     </div>
   )
 }

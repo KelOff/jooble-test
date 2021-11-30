@@ -1,6 +1,5 @@
 .HistoryItems {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: space-around;
 }

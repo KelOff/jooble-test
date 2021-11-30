@@ -8,12 +8,9 @@ const DailyRow = props => {
   return (
     <div className="DailyRow">
       <DailyItems
-        data={array}
+        data={ array }
       />
-
     </div>
-
-
   )
 }
 

@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 import weatherTodayReducer from './weatherToday'
 import searchedCityWeatherReducer from './searchedCityWeather'
 

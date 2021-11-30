@@ -4,19 +4,18 @@ import './HistoryItems.css'
 
 const HistoryItems = props => (
   <> 
-  <h1 style={{"display" : "block"}}>last 10 queries</h1>
-  <ul className="HistoryItems">
-    {props.data.map(item => {
+    <h1 style={ { 'display' : 'block' } }>last 10 queries</h1>
+    <ul className="HistoryItems">
+      {props.data.map(item => {
       return (
         <Item 
-          data={item}
-          onClick={props.onClick}
+          data={ item }
+          onClick={ props.onClick }
         />
       )})
     }  
-  </ul>
+    </ul>
   </>
   )
-
 
 export default HistoryItems

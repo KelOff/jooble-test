@@ -1,13 +1,13 @@
-import React from "react"
-import SearchForm from "./SearchForm/searchForm"
-import WeatherToday from "./WeatherToday/WeatherToday"
+import React from 'react'
+import SearchForm from './SearchForm/searchForm'
+import WeatherToday from './WeatherToday/WeatherToday'
 import './SearchRow.css'
 
 const SearchRow = (props) => {
   let name 
   let temp
 
-  if (props.state.searchedName == undefined) {
+  if (props.state.searchedName === undefined) {
       name = props.state.name
       temp = props.state.temp
   } else {
@@ -17,15 +17,15 @@ const SearchRow = (props) => {
   }
 
  return(
- <div className="searchRow">
-    <SearchForm 
-      func={props.func}
+   <div className="searchRow">
+     <SearchForm 
+      func={ props.func }
       />
-    <WeatherToday 
-      name={name}
-      temp={temp}
+     <WeatherToday 
+      name={ name }
+      temp={ temp }
       />
-  </div>
+   </div>
 
 ) 
 }

@@ -1,4 +1,4 @@
-import {FETCH_WEATHER_SUCCESS, FETCH_WEATHER_ERROR} from './actionTypes'
+import { FETCH_WEATHER_SUCCESS, FETCH_WEATHER_ERROR } from './actionTypes'
 
 export function fetchWeatherStart() {
 
@@ -26,8 +26,6 @@ export function fetchWeatherSuccess(name, temp) {
 export function fetchWeatherError(error) {
   return {
     type: FETCH_WEATHER_ERROR,
-    error: alert("Nor Founded")
+    error: alert('Nor Founded')
   }
 }
-
-
